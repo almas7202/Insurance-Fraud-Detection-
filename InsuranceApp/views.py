@@ -1,4 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-#Commit From ALmas
+def baseview(request):
+    return render(request,'base.html')
