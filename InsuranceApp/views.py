@@ -8,5 +8,9 @@ def baseview(request):
 def indexview(request):
     return render(request,'index.html')
 
-def authview(request):
-    return render(request,'authentication.html')
+def registerview(request):
+    return render(request,'register.html')
+
+
+def loginview(request):
+    return render(request,'login.html')

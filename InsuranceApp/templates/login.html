@@ -1,10 +1,8 @@
+
 {% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="zxx">
     
 <!-- Mirrored from templates.envytheme.com/erudex/default/authentication.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 17:55:54 GMT -->
-
 
 
 {% block body %}
@@ -24,14 +22,14 @@
         <!-- Preloader -->
        
         <!-- Header -->
-        <header class="inner-page-header">
+        <header>
             <div class="container">
                 <div class="inner-header-content">
-                    <h1>Register</h1>
+                    <h1>Authentication</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                          <li class="breadcrumb-item active" aria-current="page">Register</li>
+                          <li class="breadcrumb-item active" aria-current="page">Authentication</li>
                         </ol>
                     </nav>
                 </div>
@@ -39,46 +37,53 @@
         </header>
         <!-- Header -->
         <!-- Authentication-section -->
-        <div class="h-100 d-flex align-items-center justify-content-center mt-2 ">
+        <div class="authentication-section pt-100 pb-70">
             <div class="container">
                 <div class="row justify-content-center">
+                    
                     <div class="col-12 col-md-6 pb-30">
                         <div class="authentication-item">
-                            <h3>Register</h3>
+                            <h3>Login</h3>
                             <div class="authentication-form">
                                 <form>
                                     <div class="form-group mb-20">
-                                        <input type="text" name="name" class="form-control" required placeholder="Username*">
-                                    </div>
-                                    <div class="form-group mb-20">
-                                        <input type="text" name="email" class="form-control" required placeholder="Email*">
+                                        <input type="text" name="user" class="form-control" required placeholder="Username/Email Address*">
                                     </div>
                                     <div class="form-group mb-20">
                                         <input type="password" name="email" class="form-control" required placeholder="Password*">
                                     </div>
-                                    <p class="font-italic mb-20 form-desc">The password must be at least twelve characters long, contain upper and lower case letters, contain numbers, contain symbols like ! " ? $ % ^ & ).</p>
-                                    <button class="btn main-btn full-width mb-20">Register Now</button>
-                                    <div class="authentication-account-access">
+                                    <div class="authentication-account-access mb-20">
                                         <div class="authentication-account-access-item">
                                             <div class="input-checkbox">
-                                                <input type="checkbox" id="check2">
-                                                <label for="check2">I agree to the <a href="privacy-policy.html">Privacy Policy</a> & <a href="terms-of-service.html">Terms of Service</a></label>
+                                                <input type="checkbox" id="check1">
+                                                <label for="check1">Remember Me!</label>
+                                            </div>
+                                        </div>
+                                        <div class="authentication-account-access-item">
+                                            <div class="authentication-link">
+                                                <a href="forget-password.html">Forget password?</a>
                                             </div>
                                         </div>
                                     </div>
+                                    <button class="btn main-btn full-width">Log In</button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
         <!-- Authentication-section -->
-        
-        
+       
+       
 
-        
+        <!-- Scroll-top -->
+        <div class="scroll-top" id="scrolltop">
+            <div class="scroll-top-inner">
+                <i class="icofont-long-arrow-up"></i>
+            </div>
+        </div>
+        <!-- Scroll-top -->
 
         <!-- Topbar-side-modal -->
         <div class="side-modal-wrapper">
@@ -155,9 +160,27 @@
         <!-- Search-overlay -->
 
 
-        
+        <!-- essential js -->
+        <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <!-- magnific popup js -->
+        <script src="assets/js/jquery.magnific-popup.min.js"></script>
+        <!-- owl carousel js -->
+        <script src="assets/js/owl.carousel.min.js"></script>
+        <!-- nice select js -->
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <!-- form ajazchimp js -->
+        <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+        <!-- form validator js  -->
+        <script src="assets/js/form-validator.min.js"></script>
+        <!-- contact form js -->
+        <script src="assets/js/contact-form-script.js"></script>
+        <!-- meanmenu js -->
+        <script src="assets/js/jquery.meanmenu.min.js"></script>
+        <!-- main js -->
+        <script src="assets/js/script.js"></script>
     </body>
-    {% endblock body %}
+
+{% endblock body %}
 
 <!-- Mirrored from templates.envytheme.com/erudex/default/authentication.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 17 Jul 2023 17:55:54 GMT -->
-</html>
